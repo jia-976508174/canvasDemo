@@ -1,0 +1,56 @@
+$unit: 1px;
+/*高 垂直居中*/
+@mixin Height($px) {
+    height: $px * $unit;
+    line-height: $px * $unit;
+  }
+  /**
+    * position 定位
+  **/
+  @mixin Position($name, $val, $t, $r, $b, $l) {
+    position: $name;
+    z-index: $val;
+    @if ($t != "") {
+      top: $t;
+    }
+    @if ($r != "") {
+      right: $r;
+    }
+    @if ($b != "") {
+      bottom: $b;
+    }
+    @if ($l != "") {
+      left: $l;
+    }
+    width: 100%;
+  }
+  
+  /*
+   * $bg 背景图片
+   * $type 背景图片平铺方式 cover contain
+  */
+  @mixin Background($bg, $type) {
+    background: no-repeat center;
+    @if ($bg != "" and $bg != null) {
+      background-image: url($bg);
+    }
+    background-size: $type;
+  }
+  
+  /*单行打点*/
+  @mixin text-ellipsis(){
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+/**
+ * 多行文本省略，
+ */
+@mixin lamp-clamp($line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
