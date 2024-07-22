@@ -9,6 +9,7 @@
 **演示:**
 
 <image src="~@assets/images/ys.gif" /> 
+![image](https://github.com/jia-976508174/canvasDemo/blob/master/Untitled3.gif)
 
 **注意点:**
 
