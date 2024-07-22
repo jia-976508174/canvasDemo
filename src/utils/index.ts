@@ -3,7 +3,7 @@ import storage from "./storage";
 
 export default {
   system: Taro.getSystemInfoSync(),
-  upLoadUrl: `${HOST}/imageProcess/extraSingleImage`,
+  // upLoadUrl: `${HOST}/imageProcess/extraSingleImage`,
   isRequest: false,
   /**
    * 链接跳转
