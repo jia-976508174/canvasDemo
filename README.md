@@ -8,7 +8,7 @@
 
 **演示:**
 
-<image src="~@assets/images/ys.gif" />
+<image src="~@assets/images/ys.gif" /> 
 
 **注意点:**
 
